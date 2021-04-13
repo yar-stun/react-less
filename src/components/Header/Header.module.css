@@ -1,0 +1,8 @@
+.header {
+  grid-area: h;
+  background-color: darkkhaki;
+}
+
+.header img {
+  max-width: 70px;
+}
