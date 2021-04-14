@@ -5,15 +5,9 @@ import DialogItem from './DialogItem/DialogItem';
 
 const Dialogs = (props) => {
 
-  let dialogs = [
-    {id: 1, name: 'Dimych' },
-    {id: 2, name: 'Tolya' },
-    {id: 3, name: 'Katya' },
-    {id: 4, name: 'Gorik' },
-    {id: 5, name: 'Petya' }
-  ];
+  let dialogElements = props.state.dialogs.map(d => <DialogItem name={d.name} id={d.id} />);
 
-  let dialogElements = dialogs.map(d => <DialogItem name={d.name} id={d.id} />);
+  let messageElements = props.state.messages.map(m => <Message message={m.message} />);
 
     return (
       <div className={s.dialogs}>
@@ -21,10 +15,7 @@ const Dialogs = (props) => {
             { dialogElements }
         </div>
         <div className={s.messages}>
-          <Message message="fdgdfgfdg"/>
-          <Message message="fdgfdghfgdfgfdg"/>
-          <Message message="233ewdsad"/>
-          <Message message="rdgf433"/>
+            { messageElements }
         </div>
       </div>
     );
