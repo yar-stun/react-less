@@ -1,8 +1,23 @@
 .header {
   grid-area: h;
   background-color: darkkhaki;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 .header img {
   max-width: 70px;
+}
+
+.loginValue {
+  color: #a52e2e;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.loginText {
+  color: #000;
+  font-weight: 600;
+  font-size: 20px;
 }

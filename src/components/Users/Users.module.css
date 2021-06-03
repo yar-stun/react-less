@@ -1,0 +1,12 @@
+.userPhoto {
+    max-width: 150px;
+}
+
+.pageActive {
+    font-weight: bold;
+}
+
+span {
+    cursor: pointer;
+    padding: 0 3px;
+}
